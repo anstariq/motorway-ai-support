@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in — Motorway AI Support</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="gate-body">
+    <main class="gate">
+      <div class="gate__panel">
+        <img src="motorway-logo.svg" alt="Motorway" class="gate__logo" />
+
+        <h1 class="gate__title">AI Support Center</h1>
+        <p class="gate__sub">Sign in to continue to the demo.</p>
+
+        <p class="gate__error" id="gate-error" role="alert" hidden>
+          That username and password combination wasn't recognised.
+        </p>
+
+        <form class="gate__form" method="POST" action="/api/login">
+          <label>
+            <span class="gate__label">Username</span>
+            <input
+              class="gate__input"
+              type="text"
+              name="username"
+              autocomplete="username"
+              autocapitalize="none"
+              spellcheck="false"
+              required
+              autofocus
+            />
+          </label>
+
+          <label>
+            <span class="gate__label">Password</span>
+            <input
+              class="gate__input"
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              required
+            />
+          </label>
+
+          <button class="btn btn--green gate__submit" type="submit">
+            <span class="btn__icon">🔒</span>
+            <span>Sign In</span>
+          </button>
+        </form>
+      </div>
+
+      <p class="gate__footer">© Copyright 2023 Motorway</p>
+    </main>
+
+    <script>
+      // The gate redirects back here with ?e=1 on a failed attempt.
+      if (location.search.indexOf("e=1") !== -1) {
+        document.getElementById("gate-error").hidden = false;
+        history.replaceState(null, "", location.pathname);
+      }
+    </script>
+  </body>
+</html>

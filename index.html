@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorway AI Support</title>
+    <meta
+      name="description"
+      content="Connect with Motorway's AI-powered support — voice or chat, available 24/7."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://beta.ai.chatquartz.com" />
+    <link rel="dns-prefetch" href="https://beta.ai.chatquartz.com" />
+  </head>
+  <body>
+    <!-- HERO (header sits over the photograph, as on the live site) -->
+    <section class="hero">
+      <header class="header">
+        <div class="shell header__inner">
+          <a class="header__logo" href="#" aria-label="Motorway">
+            <img src="motorway-logo.svg" alt="Motorway" />
+          </a>
+          <nav class="nav" aria-label="Main">
+            <a class="nav__link" href="#overview">Overview</a>
+            <a class="nav__link" href="#benefits">Benefits</a>
+            <a class="nav__link" href="#setup">Setup</a>
+            <a class="nav__link" href="#products">Products</a>
+            <a class="nav__link" href="#works">Works</a>
+            <a class="nav__link" href="#about">About</a>
+            <a class="btn btn--green nav__cta" href="#">Get in touch</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="shell hero__inner">
+        <h1 class="hero__heading">
+          We <span class="u">Motor</span> your <span class="u">Way</span>
+        </h1>
+        <p class="hero__sub">
+          Operations management software for car distributors and dealer
+          networks
+        </p>
+        <div class="hero__actions">
+          <button id="call-btn" class="btn btn--green">
+            <span class="btn__icon">📞</span>
+            <span id="call-btn-label">Click to Call</span>
+          </button>
+          <a class="btn btn--white" href="#overview">Learn More</a>
+        </div>
+        <div class="status-pill">
+          <span class="status-pill__dot" id="status-dot"></span>
+          <span id="status-label">Ready to connect</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BELIEF BAND -->
+    <section class="band">
+      <div class="shell">
+        <h2 class="band__heading">
+          We strongly believe that good quality data is the key to running any
+          successful business
+        </h2>
+        <p class="band__copy">
+          Motorway helps you to create actionable data as a byproduct of
+          everyday work in real-time with no extra effort required.
+        </p>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="split" id="overview">
+      <div class="shell split__inner">
+        <div class="split__media">
+          <img src="hero.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="split__body">
+          <h2 class="h-section">Overview</h2>
+          <p>
+            Motorway is building business process automation solutions for car
+            sales businesses. Our mission is to help companies importing and
+            selling cars to transition from hindsight-driven and reactive
+            management practices to prediction based planning and proactive
+            execution.
+          </p>
+          <p>
+            Motorway goes beyond keeping track of goods, resources and
+            receivables. Our software service will provide you actionable
+            decision support in real-time and empower you to actively manage
+            your sales and revenue.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EASY TO USE -->
+    <section class="prose">
+      <div class="shell">
+        <h2 class="h-section">Easy To Use</h2>
+        <p>
+          You can use Motorway to power your omni-channel online car sales
+          network and your customers will be able to configure and purchase cars
+          with minimal attention from sales personnel.
+        </p>
+        <p>
+          Cars in showroom, lot, transit or even cars that have not been
+          manufactured yet, Motorway powered stores can sell them all.
+        </p>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits" id="benefits">
+      <div class="shell">
+        <h2 class="h-section">Benefits</h2>
+        <ul class="grid3">
+          <li><h3>Real-time situation updates</h3><p>Online updates from dealers, daily updates from the factory.</p></li>
+          <li><h3>Reduced communication overhead</h3><p>Focused messages boost communication efficiency 3&times; or more.</p></li>
+          <li><h3>Lightning fast sales</h3><p>Make a detailed and personalised sales offer in 10 seconds.</p></li>
+          <li><h3>High level of process automation</h3><p>Employees have been liberated from non-productive tasks.</p></li>
+          <li><h3>Zero paperwork, no Excel sheets</h3><p>On-demand access to holistic and centralised data repository.</p></li>
+          <li><h3>Enforced 100% error-free processing</h3><p>Fully automated detection of order-delivery mismatches.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FULL CONTROL -->
+    <section class="control" id="products">
+      <div class="shell">
+        <h2 class="h-section h-section--center">Full Control</h2>
+        <ul class="cards">
+          <li class="card"><h3>Every bit of data is always accessible</h3><p>We keep detailed data on all car-related events and transactions.</p></li>
+          <li class="card"><h3>Insight beyond cars on balance sheet</h3><p>We cover much more than just the cars in current inventory.</p></li>
+          <li class="card"><h3>Full control over lifecycle of each car</h3><p>Configure and track individual cars months before production.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EVERYDAY OPERATIONS -->
+    <section class="ops" id="works">
+      <div class="shell">
+        <h2 class="h-section">Everyday Operations</h2>
+        <div class="ops__grid">
+          <div class="ops__col">
+            <h3>Customer sales &amp; pre-orders</h3>
+            <ul class="ticks">
+              <li>Manage sales offers, follow-ups &amp; pre-orders</li>
+              <li>Reserve cars over different warehouses</li>
+              <li>Streamlined communication with financers</li>
+              <li>Expedite stock turnover where possible</li>
+              <li>Follow and enforce CO2 quota if required</li>
+            </ul>
+          </div>
+          <div class="ops__col">
+            <h3>Logistics &amp; stock management</h3>
+            <ul class="ticks">
+              <li>Manage and track deliveries from factory</li>
+              <li>All cars accessible to every salesman</li>
+              <li>Internal multi-market vehicle exchange</li>
+              <li>Same system to cover demo and used cars</li>
+              <li>Track inspections and buy-back obligations</li>
+            </ul>
+          </div>
+          <div class="ops__col">
+            <h3>Factory order &amp; manufacturing</h3>
+            <ul class="ticks">
+              <li>Aggregate and confirm orders from dealers</li>
+              <li>Place factory production orders in bulk</li>
+              <li>Keep track of production status of each car</li>
+              <li>Automatically validate production specs</li>
+              <li>Automatically validate factory invoices</li>
+            </ul>
+          </div>
+          <div class="ops__col">
+            <h3>Handover &amp; after sales</h3>
+            <ul class="ticks">
+              <li>Enforce application of service campaigns</li>
+              <li>Manage PDI and car handover to customer</li>
+              <li>Automated registration in local DMV</li>
+              <li>Automated registration of start of warranty</li>
+              <li>Manage warranty claims and service events</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPORTING -->
+    <section class="reporting">
+      <div class="shell">
+        <h2 class="h-section">Real-Time Reporting</h2>
+        <div class="grid3 grid3--plain">
+          <div>
+            <h3>Sales reports</h3>
+            <ul class="ticks">
+              <li>Sales pipeline value forecasting</li>
+              <li>Sales activities, pre-sale reservations</li>
+              <li>CO2 quota allocation and availability</li>
+              <li>Market share for production forecasting</li>
+              <li>Sales data required by local governments</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Stock level reports</h3>
+            <ul class="ticks">
+              <li>Sales forecasting and stock planning</li>
+              <li>Factory orders, estimated completion</li>
+              <li>Detailed overview of production process</li>
+              <li>Vehicles in transit, estimated time of arrival</li>
+              <li>Total stock, all warehouses, all dealers</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Financial reports</h3>
+            <ul class="ticks">
+              <li>Stock value, drilldown by warehouses</li>
+              <li>Actual production and delivery costs</li>
+              <li>Expected costs compared to actual costs</li>
+              <li>Order plan and commitment to factory</li>
+              <li>Buy-back commitment to financers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETUP -->
+    <section class="setup" id="setup">
+      <div class="shell setup__inner">
+        <div class="setup__body">
+          <h2 class="h-section">Setup</h2>
+          <p>
+            Motorway is a cloud based service that can be set up to co-operate
+            with your existing systems like Automaster or any system handling
+            your finances. Roll-out is easy and does not require a complete
+            overhaul of your business or IT.
+          </p>
+          <p>
+            Although we recommend to set up Motorway to cover the entire sales
+            and distribution process complete with direct integrations to
+            factory systems in order to achieve maximum effect for your market,
+            Motorway can be used to cover just a certain part of the sales and
+            distribution chain as well.
+          </p>
+        </div>
+        <div class="setup__diagram" aria-hidden="true">
+          <span class="hub">Motorway</span>
+          <span class="spoke spoke--1">Factory</span>
+          <span class="spoke spoke--2">Sales</span>
+          <span class="spoke spoke--3">eCommerce</span>
+          <span class="spoke spoke--4">Service</span>
+          <span class="spoke spoke--5">3rd party systems</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="about">
+      <div class="shell footer__inner">
+        <div class="footer__brand">
+          <img src="motorway-logo.svg" alt="Motorway" class="footer__logo" />
+          <p class="footer__tag">We <span class="u">Motor</span> your <span class="u">Way</span></p>
+        </div>
+        <div class="footer__col">
+          <h4>Links</h4>
+          <a href="#products">Products</a>
+          <a href="#works">Works</a>
+          <a href="#">Career</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="tel:+3725078676">+372 50 78 676</a>
+          <a href="mailto:sales@motorway.software">sales@motorway.software</a>
+        </div>
+      </div>
+      <div class="footer__base">
+        <div class="shell">© Copyright 2023 Motorway</div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+    <!--
+      chatQuartz chatbot widget.
+      TODO: replace YOUR_CHATQUARTZ_ACCOUNT_ID with Motorway's chatQuartz
+      account ID, then uncomment this script tag.
+    -->
+    <!--
+    <script
+      id="chat-init"
+      src="https://beta.ai.chatquartz.com/account/js/init.js?id=YOUR_CHATQUARTZ_ACCOUNT_ID"
+    ></script>
+    -->
+  </body>
+</html>
