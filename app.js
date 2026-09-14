@@ -1,9 +1,8 @@
 // ── Config ──────────────────────────────────────────────────────────────────
 // PUBLIC_KEY is the account-level Vapi public key (Vapi dashboard → Account → API Keys).
 // ASSISTANT_ID is per-assistant (Vapi dashboard → Assistants → select → copy ID).
-// TODO: replace ASSISTANT_ID with the Motorway assistant.
 var PUBLIC_KEY = "07a2396d-9738-4838-af99-f6a18d946f0b";
-var ASSISTANT_ID = "REPLACE_WITH_MOTORWAY_ASSISTANT_ID";
+var ASSISTANT_ID = "e899f5fc-f53e-4318-909b-7876af1accdc";
 // ────────────────────────────────────────────────────────────────────────────
 
 var configured = ASSISTANT_ID.indexOf("REPLACE_WITH") !== 0;

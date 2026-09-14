@@ -39,18 +39,17 @@ viewports. All copy is the client's own, taken from the live page.
 Links in the header and body are inert: this is a single-page demo, and the
 call button is the only working control.
 
-## Setup — remaining TODOs
+## Configuration
 
-1. **Voice agent.** Open `app.js` and replace `ASSISTANT_ID` with the Motorway
-   Vapi assistant ID. `PUBLIC_KEY` is the shared account-level key and does not
-   need changing. Until `ASSISTANT_ID` is replaced the call button renders
-   disabled with an "Assistant not configured" status instead of failing on
-   click.
+**Voice agent — done.** `ASSISTANT_ID` in `app.js` points at the Motorway
+assistant, and `PUBLIC_KEY` is the account-level key for the same Vapi org, so
+the two are a valid pair. Nothing further is required.
 
-2. **Chatbot.** Open `index.html`, find the commented-out chatQuartz block near
-   the bottom, replace `YOUR_CHATQUARTZ_ACCOUNT_ID` with Motorway's account ID,
-   and uncomment the `<script>` tag. The widget's colours and greeting come
-   from that account's dashboard, not from this repo.
+**Chatbot — outstanding, owned elsewhere.** The chatQuartz `<script>` at the
+bottom of `index.html` is deliberately left commented out with a placeholder
+account ID. Replace `YOUR_CHATQUARTZ_ACCOUNT_ID` and uncomment the tag to
+enable it. The widget's colours and greeting come from that account's
+dashboard, not from this repo.
 
 ## Access gate
 
